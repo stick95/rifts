@@ -1,6 +1,6 @@
 rifts_character_creator/venv
 rifts-character-creator/node_modules
+rifts-character-creator/.angular/
 *.pyc
 *.log
-/rifts-character-creator/node_modules/
-/rifts-character-creator/.angular/
+
