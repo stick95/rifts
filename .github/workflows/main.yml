@@ -1,0 +1,62 @@
+name: CI/CD Workflow
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8  # Adjust this to your desired version
+
+    - name: Install dependencies
+      run: |
+        cd rifts_character_creator
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Deploy Django Backend with Zappa
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: |
+        cd rifts_character_creator
+        zappa update prod  # Assuming "dev" is your environment stage
+
+  deploy-frontend:
+    needs: deploy-backend
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.8.1' # Adjust this to your desired version
+
+    - name: Install dependencies
+      run: |
+        cd rifts-character-creator
+        npm install
+
+    - name: Build Angular project
+      run: |
+        cd rifts-character-creator
+        ng build --configuration=production
+
+    - name: Deploy Angular frontend to S3
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: |
+        cd rifts-character-creator
+        aws s3 sync dist/YourAppName s3://your-s3-bucket-name/
