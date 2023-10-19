@@ -50,6 +50,7 @@ jobs:
       run: |
         cd rifts-character-creator
         npm install
+        npm install -g @angular/cli
 
     - name: Build Angular project
       run: |
