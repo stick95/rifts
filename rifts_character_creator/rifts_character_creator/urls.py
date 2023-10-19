@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from character.views import CharacterListCreateView
+
+from characters.views import CharacterListCreateView
+from classes.views import OccListCreateView, RccListCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('characters/', CharacterListCreateView.as_view(), name='item-list-create'),
+    path('occs/', OccListCreateView.as_view(), name='item-list-create'),
+    path('rccs/', RccListCreateView.as_view(), name='item-list-create'),
 ]
