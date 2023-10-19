@@ -59,4 +59,5 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         cd rifts-character-creator
+        source venv/bin/activate
         aws s3 sync dist/YourAppName s3://your-s3-bucket-name/
