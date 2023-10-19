@@ -63,4 +63,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         cd rifts-character-creator
-        aws s3 sync dist/YourAppName s3://your-s3-bucket-name/
+        aws s3 sync dist/rifts-character-creator s3://rifts-character-creator-frontend-prod/
