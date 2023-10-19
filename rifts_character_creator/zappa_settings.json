@@ -1,0 +1,28 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "django_settings": "rifts_character_creator.dev_settings",
+        "profile_name": "rad-admin",
+        "project_name": "rifts-character",
+        "runtime": "python3.8",
+        "s3_bucket": "rifts-character-creator-dev",
+        "slim_handler": true
+    },
+    "prod": {
+        "aws_region": "us-east-1",
+        "django_settings": "rifts_character_creator.prod_settings",
+        "profile_name": "rad-admin",
+        "project_name": "rifts-character",
+        "runtime": "python3.8",
+        "s3_bucket": "rifts-character-creator-prod",
+        "slim_handler": true,
+        "manage_roles": [
+            {
+                "name": "Migrate",
+                "action": "migrate",
+                "args": ["--noinput"]
+            }
+        ],
+        "manage_roles_versioning": true,
+    }
+}

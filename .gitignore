@@ -1,0 +1,4 @@
+rifts_character_creator/venv
+rifts-character-creator/node_modules
+*.pyc
+*.log
