@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path
 
 from characters.views import CharacterListCreateView
-from classes.views import OccListCreateView, RccListCreateView
+from classes.views import OccListCreateView, RccListCreateView, RccDetailView, OccDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('characters/', CharacterListCreateView.as_view(), name='item-list-create'),
-    path('occs/', OccListCreateView.as_view(), name='item-list-create'),
-    path('rccs/', RccListCreateView.as_view(), name='item-list-create'),
+    path('characters/', CharacterListCreateView.as_view(), name='characters-list-create'),
+    path('occs/', OccListCreateView.as_view(), name='occ-list-create'),
+    path('occs/<int:pk>/', OccDetailView.as_view(), name='occ-detail'),
+    path('rccs/', RccListCreateView.as_view(), name='rcc-list-create'),
+    path('rccs/<int:pk>/', RccDetailView.as_view(), name='rcc-detail'),
 ]

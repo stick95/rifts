@@ -3,4 +3,5 @@ rifts-character-creator/node_modules
 rifts-character-creator/.angular/
 *.pyc
 *.log
+creds.txt
 

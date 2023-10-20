@@ -15,11 +15,7 @@ class OccSerializer(serializers.ModelSerializer):
 
 
 class RccSerializer(serializers.ModelSerializer):
-    occs = serializers.SlugRelatedField(
-        many=True,
-        slug_field='name',
-        queryset=Occ.objects.all()
-    )
+    occ = OccSerializer(many=True, read_only=True)
 
     class Meta:
         model = Rcc
