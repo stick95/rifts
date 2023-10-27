@@ -1,0 +1,3 @@
+AWS Account: 054610789335
+AWS USer: rad-admin
+AWS Passowrd: cGk030507!
