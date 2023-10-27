@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77ae191d-4143-4b25-aff0-64049850037d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creds.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rifts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rifts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/.idea/rifts-character-creator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/dist/rifts-character-creator/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/dist/rifts-character-creator/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/dist/rifts-character-creator/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/dist/rifts-character-creator/main.1039ea78cc4c183f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/dist/rifts-character-creator/polyfills.85d180c0dc8aef30.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/dist/rifts-character-creator/runtime.03c944aafab11f34.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/dist/rifts-character-creator/styles.ef46db3751d8e999.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/character-list/character-list.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/character-list/character-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/character-list/character-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/character-list/character-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/character.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/services/character.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/character.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/services/character.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/rifts_character_creator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2XC3RZ88PbGDoxQcebpvreW9hS2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/robertdragotta/projects/rifts/rifts-character-creator/node_modules/typescript/lib&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rifts-character-creator/src/app/services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Compound.chargen">
+    <configuration name="chargen" type="CompoundRunConfigurationType">
+      <toRun name="chargen backend" type="Python.DjangoServer" />
+      <toRun name="chargen front end" type="js.build_tools.npm" />
+      <method v="2" />
+    </configuration>
+    <configuration name="chargen backend" type="Python.DjangoServer" factoryName="Django server">
+      <module name="rifts" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="rifts_character_creator.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/rifts_character_creator/venv/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rifts_character_creator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="chargen front end" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/rifts-character-creator/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Compound.chargen" />
+      <item itemvalue="Django Server.chargen backend" />
+      <item itemvalue="npm.chargen front end" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77ae191d-4143-4b25-aff0-64049850037d" name="Changes" comment="" />
+      <created>1698119227020</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698119227020</updated>
+      <workItem from="1698119228161" duration="31000" />
+      <workItem from="1698119295801" duration="19000" />
+      <workItem from="1698119353662" duration="6017000" />
+      <workItem from="1698262154796" duration="4025000" />
+      <workItem from="1698447997058" duration="1087000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
