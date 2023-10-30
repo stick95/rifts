@@ -1,13 +1,79 @@
+<ng-template #startCharacterModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Start a New Character</h4>
+    <button type="button" class="close-button" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form #startCharacterForm="ngForm" (ngSubmit)="createCharacter()">
+    <div class="modal-body">
+        <div class="form-group">
+          <label for="characterName">Character Name:</label>
+          <input type="text" class="form-control" id="characterName" name="characterName" [(ngModel)]="characterData.name" placeholder="Enter character name" required>
+        </div>
+        <div class="form-group">
+          <label for="userId">Player</label>
+          <select class="form-control" id="userId" name="userId" [(ngModel)]="characterData.user" required>
+            <option *ngFor="let user of users" [value]="user.id">{{ user.first_name }} {{ user.last_name }}</option>
+          </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modal.dismiss('cancel')">Cancel</button>
+      <button type="submit" [disabled]="!startCharacterForm.form.valid" class="btn btn-primary">Create</button>
+    </div>
+  </form>
+</ng-template>
+
+<ng-template #deleteCharacterModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Delete Character</h4>
+    <button type="button" class="close-button" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Are you sure you would like to delete {{ deleteCharacter.name }}?
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss('cancel')">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="confirmDelete(deleteCharacter.id)">Delete</button>
+  </div>
+</ng-template>
+
 <div class="button-bar">
-    <button class="bar-button" (click)="button_click()">Start New Character</button>
+    <button class="bar-button" (click)="openModal(startCharacterModal)">Start New Character</button>
     <!-- ... add more buttons as needed -->
 </div>
 
 <div class="content-block">
-              <div class="block-title">Character List</div>
-              {{ characters }}
-<!--                <ul>-->
-<!--                    <li *ngFor="let character of characters">{{ character.name }}: {{ character.age }}</li>-->
-<!--                </ul>-->
+  <div class="block-title">Character List</div>
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>
+            Character
+          </th>
+          <th>
+            Player
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let character of characters">
+          <td>
+            {{ character.name }}
+          </td>
+          <td>
+            {{ character.userDetails.first_name }} {{ character.userDetails.last_name }}
+          </td>
+          <td>
+            <button class="delete-button" (click)="startDeleteCharacter(character, deleteCharacterModal)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
 </div>
 

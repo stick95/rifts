@@ -17,14 +17,24 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from characters.views import CharacterListCreateView
+from characters.views import CharacterListCreateView, CharacterDeleteView
 from classes.views import OccListCreateView, RccListCreateView, RccDetailView, OccDetailView
+from users.views import UserListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('characters/', CharacterListCreateView.as_view(), name='characters-list-create'),
-    path('occs/', OccListCreateView.as_view(), name='occ-list-create'),
-    path('occs/<int:pk>/', OccDetailView.as_view(), name='occ-detail'),
-    path('rccs/', RccListCreateView.as_view(), name='rcc-list-create'),
-    path('rccs/<int:pk>/', RccDetailView.as_view(), name='rcc-detail'),
+
+    #Characters
+    path('api/characters/', CharacterListCreateView.as_view(), name='characters-list-create'),
+    path('api/characters/<int:pk>/delete/', CharacterDeleteView.as_view(), name='character-delete'),
+
+    #Classes
+    path('api/occs/', OccListCreateView.as_view(), name='occ-list-create'),
+    path('api/occs/<int:pk>/', OccDetailView.as_view(), name='occ-detail'),
+    path('api/rccs/', RccListCreateView.as_view(), name='rcc-list-create'),
+    path('api/rccs/<int:pk>/', RccDetailView.as_view(), name='rcc-detail'),
+
+    #Users
+    path('api/users/', UserListView.as_view(), name='user-list'),
+
 ]

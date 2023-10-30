@@ -1,7 +1,7 @@
 $content-block-border-color: #ccc;
 $content-block-background: rgba(255, 255, 255, 0.9);
 $default-font-color: #333;
-$default-title-font: 'Exo 2', sans-serif;
+$default-font: 'Exo 2', sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;800&display=swap');
@@ -13,6 +13,8 @@ body {
   background-size: cover;
   height: 100vh;
   overflow: hidden;
+  font-family: $default-font;
+  color: $default-font-color;
 }
 
 .foreground {
@@ -39,7 +41,7 @@ body {
     margin-bottom: 0.5em;
     position: relative;
     padding-bottom: 0.5em;
-    font-family: $default-title-font;
+    font-family: $default-font;
   }
 }
 
@@ -71,10 +73,10 @@ body {
       // Futuristic text glow
       text-shadow: 0 0 10px #fff, // Horizontal, vertical, blur, color
       0 0 15px #fff,
-      0 0 20px #ff2d95, // You can change the color to anything you like
-      0 0 25px #ff2d95,
-      0 0 30px #ff2d95,
-      0 0 35px #ff2d95;
+      0 0 20px #0a53be, // You can change the color to anything you like
+      0 0 25px #0a53be,
+      0 0 30px #0a53be,
+      0 0 35px #0a53be;
     }
 
     // When you press the button
@@ -85,4 +87,81 @@ body {
   }
 }
 
+// Button styles
+.content-block button {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #555; // Slightly lighter than the bar background
+  color: #FFF; // White text
+  transition: all 0.3s ease;
+}
+.delete-button {
+  background-color: #600;
+}
 
+// Main content tables
+.content-table {
+  border: black 1px;
+}
+.content-table th {
+  padding: 10px;
+}
+.content-table td {
+  padding: 10px;
+}
+
+// Modal styling
+.close-button {
+  border: none;
+  background-color: transparent;
+}
+
+.close-button span {
+  /* your styles for the span go here */
+  font-size: xx-large; /* for example, making the text color red */
+}
+
+// Form styling
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+//Toastr styling
+.toast {
+    color: white;
+}
+
+.toast-success {
+    color:white;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.5); // semi-transparent green
+}
+
+.toast-info {
+    color:white;
+    padding: 10px;
+    background-color: rgba(256, 256, 256, 0.5); // semi-transparent green
+}
+
+.toast-error {
+    color:white;
+    padding: 10px;
+    background-color: rgba(128, 0, 0, 0.5); // semi-transparent green
+}
+
+.toast-bottom-full-width {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1050; // to make sure it appears above other content
+}
