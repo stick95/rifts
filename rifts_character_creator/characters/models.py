@@ -10,7 +10,11 @@ class Character(models.Model):
     user = models.ForeignKey(User, related_name='characters', on_delete=models.CASCADE, null=True)
     occ = models.ForeignKey(Occ, related_name='characters', on_delete=models.CASCADE, null=True)
     rcc = models.ForeignKey(Rcc, related_name='characters', on_delete=models.CASCADE, null=True)
+    current_stats = models.JSONField(null=True)
+    max_stats = models.JSONField(null=True)
+    level = models.IntegerField(null=True)
 
     def __str__(self):
         return self.name
+
 

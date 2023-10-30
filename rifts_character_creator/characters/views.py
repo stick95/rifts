@@ -8,7 +8,7 @@ class CharacterListCreateView(generics.ListCreateAPIView):
     serializer_class = CharacterSerializer
 
 
-class CharacterDeleteView(generics.DestroyAPIView):
+class CharacterDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Character.objects.all()
     serializer_class = CharacterSerializer
 

@@ -4,6 +4,7 @@ $default-font-color: #333;
 $default-font: 'Exo 2', sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;800&display=swap');
 
 body {
@@ -164,4 +165,15 @@ body {
     width: 100%;
     text-align: center;
     z-index: 1050; // to make sure it appears above other content
+}
+
+// Feather icon settings
+.feather {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
 }

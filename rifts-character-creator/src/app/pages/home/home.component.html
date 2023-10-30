@@ -42,7 +42,7 @@
 </ng-template>
 
 <div class="button-bar">
-    <button class="bar-button" (click)="openModal(startCharacterModal)">Start New Character</button>
+    <button class="bar-button" (click)="startCreateCharacter(startCharacterModal)">Start New Character</button>
     <!-- ... add more buttons as needed -->
 </div>
 
@@ -62,10 +62,10 @@
       </thead>
       <tbody>
         <tr *ngFor="let character of characters">
-          <td>
+          <td (click)="characterRowClicked(character.id)">
             {{ character.name }}
           </td>
-          <td>
+          <td (click)="characterRowClicked(character.id)">
             {{ character.userDetails.first_name }} {{ character.userDetails.last_name }}
           </td>
           <td>
@@ -74,6 +74,5 @@
         </tr>
       </tbody>
     </table>
-
 </div>
 

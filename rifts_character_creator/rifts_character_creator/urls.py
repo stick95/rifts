@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from characters.views import CharacterListCreateView, CharacterDeleteView
+from characters.views import CharacterListCreateView, CharacterDetailView
 from classes.views import OccListCreateView, RccListCreateView, RccDetailView, OccDetailView
 from users.views import UserListView
 
@@ -26,7 +26,7 @@ urlpatterns = [
 
     #Characters
     path('api/characters/', CharacterListCreateView.as_view(), name='characters-list-create'),
-    path('api/characters/<int:pk>/delete/', CharacterDeleteView.as_view(), name='character-delete'),
+    path('api/characters/<int:pk>/', CharacterDetailView.as_view(), name='character-detail'),
 
     #Classes
     path('api/occs/', OccListCreateView.as_view(), name='occ-list-create'),

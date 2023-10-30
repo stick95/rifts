@@ -19,12 +19,16 @@ export class CharacterService {
     }
 
     createCharacter(characterData: Character): Observable<Character> {
-      console.log(characterData);
       return this.http.post<Character>(this.baseUrl, characterData);
     }
 
     deleteCharacter(id: number) {
-      const deleteUrl = this.baseUrl + id.toString() + "/delete/";
+      const deleteUrl = this.baseUrl + id.toString() + "/";
       return this.http.delete<Character>(deleteUrl);
+    }
+
+    getCharacter(id: number) {
+      const getUrl = this.baseUrl + id.toString() + "/";
+      return this.http.get<Character>(getUrl);
     }
 }

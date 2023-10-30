@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
-import {CharacterService} from "../services/character.service";
-import {UserService} from "../services/user.service";
+import {CharacterService} from "../../services/character.service";
+import {UserService} from "../../services/user.service";
 import {ToastrService} from "ngx-toastr";
 
-import {Character}  from "../models/character.model";
-import {load} from "@angular-devkit/build-angular/src/utils/server-rendering/esm-in-memory-file-loader";
+import {Character}  from "../../models/character.model";
 
 @Component({
   selector: 'app-home',
@@ -30,7 +30,11 @@ export class HomeComponent {
     };
 
     constructor(private characterService: CharacterService, private modalService: NgbModal,
-                private userService:UserService, private toastrService: ToastrService) { }
+                private userService:UserService, private toastrService: ToastrService, private router: Router) { }
+
+    characterRowClicked(id: number) {
+      this.router.navigate(['/character/' + id.toString()]).then();
+    }
 
     ngOnInit(): void {
       // TODO: String type the character object (and others) instead of using data:any
@@ -56,20 +60,24 @@ export class HomeComponent {
         this.deleteCharacterModal.dismiss('success');
       }
       if(id != undefined) {
-        this.characterService.deleteCharacter(id).subscribe(
-          (response) => {
+        this.characterService.deleteCharacter(id).subscribe({
+          next: (response) => {
             this.toastrService.success("Character deleted");
             this.characters = this.characters.filter(character => character.id != id);
           },
-          (error) => {
+          error: (error) => {
             this.toastrService.error('There was an error deleting the character: ' + error);
-            console.log(error);
+            console.error(error);
           }
-        );
+        });
       }
     }
 
-    openModal(content:any) {
+    startCreateCharacter(content:any) {
+      this.characterData = {
+        name: '',
+        user: 0
+      };
       this.createCharacterModal = this.modalService.open(content)
     }
 
@@ -77,15 +85,15 @@ export class HomeComponent {
       if (this.createCharacterModal instanceof NgbModalRef) {
         this.createCharacterModal.dismiss('success');
       }
-      this.characterService.createCharacter(this.characterData).subscribe(
-        (response) => {
+      this.characterService.createCharacter(this.characterData).subscribe({
+        next: (response) => {
           this.toastrService.success("Character created");
           this.loadCharacters();
         },
-        (error) => {
+        error: (error) => {
           this.toastrService.error('There was an error creating the character: ' + error);
           console.log(error);
         }
-      );
+      });
     }
 }
