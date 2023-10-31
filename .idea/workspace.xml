@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77ae191d-4143-4b25-aff0-64049850037d" name="Changes" comment="Add in the migrations">
-      <change afterPath="$PROJECT_DIR$/rifts_character_creator/shared/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rifts_character_creator/shared/stats.py" afterDir="false" />
+    <list default="true" id="77ae191d-4143-4b25-aff0-64049850037d" name="Changes" comment="Character base page and starting the idea of stat blocks in the database.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/creds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/creds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/home/home.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/models/character.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/models/character.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/services/character.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/services/character.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts_character_creator/characters/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rifts_character_creator/characters/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts_character_creator/characters/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rifts_character_creator/characters/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts_character_creator/classes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rifts_character_creator/classes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts_character_creator/rifts_character_creator/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rifts_character_creator/rifts_character_creator/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +134,7 @@
       <workItem from="1698449898900" duration="21000" />
       <workItem from="1698450073260" duration="54000" />
       <workItem from="1698450165128" duration="32432000" />
-      <workItem from="1698695698371" duration="6537000" />
+      <workItem from="1698695698371" duration="15125000" />
     </task>
     <task id="LOCAL-00001" summary="Upgrade Angular">
       <created>1698449641023</created>
@@ -172,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698684399538</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Character base page and starting the idea of stat blocks in the database.">
+      <created>1698702523675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698702523675</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +185,7 @@
     <MESSAGE value="Upgrade Angular" />
     <MESSAGE value="Home page with character creation and deletion" />
     <MESSAGE value="Add in the migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add in the migrations" />
+    <MESSAGE value="Character base page and starting the idea of stat blocks in the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Character base page and starting the idea of stat blocks in the database." />
   </component>
 </project>

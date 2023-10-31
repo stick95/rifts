@@ -31,4 +31,13 @@ export class CharacterService {
       const getUrl = this.baseUrl + id.toString() + "/";
       return this.http.get<Character>(getUrl);
     }
+
+    saveCharacter(characterData: Character) {
+      let getUrl = this.baseUrl
+      if(characterData.id != undefined) {
+        getUrl = this.baseUrl + characterData.id.toString() + "/";
+      }
+      return this.http.put<Character>(getUrl, characterData);
+    }
 }
+

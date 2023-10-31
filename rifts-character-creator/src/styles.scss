@@ -60,7 +60,7 @@ body {
     margin: 0 5px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: crosshair;
     background-color: #555; // Slightly lighter than the bar background
     color: #FFF; // White text
     transition: all 0.3s ease;
@@ -96,11 +96,12 @@ body {
   margin: 0 5px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: crosshair;
   background-color: #555; // Slightly lighter than the bar background
   color: #FFF; // White text
   transition: all 0.3s ease;
 }
+
 .delete-button {
   background-color: #600;
 }
@@ -114,6 +115,10 @@ body {
 }
 .content-table td {
   padding: 10px;
+}
+.content-table td.link {
+  padding: 10px;
+  cursor: crosshair;
 }
 
 // Modal styling
@@ -176,4 +181,31 @@ body {
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
+}
+
+// Base field/label formatting
+.field-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.field-label {
+  flex: 1;
+  padding-right: 10px; // space before the separator
+}
+
+.field-input {
+  flex: 2;
+  text-align: center;
+  border-radius: 0; // Ensures it looks consistent across browsers
+}
+
+.field-md {
+  width:100px;
+}
+
+.field-sm {
+  width:50px;
 }

@@ -3,4 +3,26 @@
     <!-- ... add more buttons as needed -->
 </div>
 
+<div class="container content-block">
+  <div class="block-title">Character</div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="field-container">
+          <label class="field-label" for="name">Name</label>
+          <input class="field-input field-md" type="text" id="name" name="name" [(ngModel)]="characterData.name" (ngModelChange)="onPropertyChange()" />
+        </div>
+        <div class="field-container">
+          <label class="field-label" for="age">Age</label>
+          <input class="field-input field-sm" type="number" id="age" name="age" [(ngModel)]="characterData.age"  (ngModelChange)="onPropertyChange()"/>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        Test 2
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        Test 3
+      </div>
+    </div>
+</div>
+
 

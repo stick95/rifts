@@ -62,10 +62,10 @@
       </thead>
       <tbody>
         <tr *ngFor="let character of characters">
-          <td (click)="characterRowClicked(character.id)">
+          <td (click)="characterRowClicked(character.id)" class="link">
             {{ character.name }}
           </td>
-          <td (click)="characterRowClicked(character.id)">
+          <td (click)="characterRowClicked(character.id)" class="link">
             {{ character.userDetails.first_name }} {{ character.userDetails.last_name }}
           </td>
           <td>
