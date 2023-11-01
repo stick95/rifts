@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77ae191d-4143-4b25-aff0-64049850037d" name="Changes" comment="Character base page and starting the idea of stat blocks in the database.">
+    <list default="true" id="77ae191d-4143-4b25-aff0-64049850037d" name="Changes" comment="Basic autosave of a character">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/models/character.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/models/character.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/models/classes.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/models/classes.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/character/character.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/app/services/character.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/app/services/character.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rifts-character-creator/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rifts-character-creator/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/characters/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/rifts_character_creator/characters/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/classes/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/rifts_character_creator/classes/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rifts_character_creator/classes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rifts_character_creator/classes/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +138,8 @@
       <workItem from="1698449898900" duration="21000" />
       <workItem from="1698450073260" duration="54000" />
       <workItem from="1698450165128" duration="32432000" />
-      <workItem from="1698695698371" duration="15125000" />
+      <workItem from="1698695698371" duration="27604000" />
+      <workItem from="1698843089497" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary="Upgrade Angular">
       <created>1698449641023</created>
@@ -164,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698702523675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Basic autosave of a character">
+      <created>1698713186100</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698713186100</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +198,7 @@
     <MESSAGE value="Home page with character creation and deletion" />
     <MESSAGE value="Add in the migrations" />
     <MESSAGE value="Character base page and starting the idea of stat blocks in the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Character base page and starting the idea of stat blocks in the database." />
+    <MESSAGE value="Basic autosave of a character" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic autosave of a character" />
   </component>
 </project>

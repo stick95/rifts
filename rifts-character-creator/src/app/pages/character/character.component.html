@@ -2,27 +2,46 @@
     <button class="bar-button" (click)="goBack()"><i class="bi bi-arrow-left"></i></button>
     <!-- ... add more buttons as needed -->
 </div>
-
-<div class="container content-block">
-  <div class="block-title">Character</div>
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="field-container">
-          <label class="field-label" for="name">Name</label>
-          <input class="field-input field-md" type="text" id="name" name="name" [(ngModel)]="characterData.name" (ngModelChange)="onPropertyChange()" />
+<div class="content-container">
+  <div class="container content-block">
+    <div class="block-title">Character</div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="field-container">
+            <label class="field-label" for="name">Name</label>
+            <input class="field-input field-md" type="text" id="name" name="name" [(ngModel)]="characterData.name" (ngModelChange)="onPropertyChange()" />
+          </div>
+          <div class="field-container">
+            <label class="field-label" for="age">Age</label>
+            <input class="field-input field-sm" type="number" id="age" name="age" [(ngModel)]="characterData.age" (ngModelChange)="onPropertyChange()"/>
+          </div>
+          <div class="field-container">
+            <label class="field-label" for="rcc">RCC</label>
+            <select class="field-input field-sm" type="number" id="rcc" name="rcc" [(ngModel)]="characterData.rcc" (change)="onRccChange()">
+              <option *ngFor="let rcc of rccs" [value]="rcc.id">{{ rcc.name }}</option>
+            </select>
+          </div>
+          <div class="field-container">
+            <label class="field-label" for="occ">OCC</label>
+            <select class="field-input field-sm" type="number" id="occ" name="occ" [(ngModel)]="characterData.occ" (change)="onPropertyChange()">
+              <option *ngFor="let occ of occs" [value]="occ.id">{{ occ.name }}</option>
+            </select>
+          </div>
+          <div class="field-container">
+            <label class="field-label" for="level">Level</label>
+            <input class="field-input field-sm" type="number" id="level" name="level" max="20" [(ngModel)]="characterData.level" (ngModelChange)="onPropertyChange()"/>
+          </div>
         </div>
-        <div class="field-container">
-          <label class="field-label" for="age">Age</label>
-          <input class="field-input field-sm" type="number" id="age" name="age" [(ngModel)]="characterData.age"  (ngModelChange)="onPropertyChange()"/>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="field-container">
+            <label class="field-label" for="age">PS</label>
+            <input class="field-input field-sm" type="number" id="ps" name="ps" [(ngModel)]="characterData.age" (ngModelChange)="onPropertyChange()"/>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          Test 3
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        Test 2
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        Test 3
-      </div>
-    </div>
+  </div>
 </div>
-
 

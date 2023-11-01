@@ -7,43 +7,21 @@ $default-font: 'Exo 2', sans-serif;
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;800&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
   background: url('assets/background.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
-  overflow: hidden;
   font-family: $default-font;
   color: $default-font-color;
-}
-
-.foreground {
-}
-
-// Mixins
-@mixin smooth-transition($property: all, $duration: 0.3s, $timing: ease) {
-  transition: $property $duration $timing;
-}
-
-// Main content blocks
-.content-block {
-  padding: 1em 1.5em;
-  margin: 15px 15px 15px 15px;
-  background-color: rgba(255, 255, 255, 0.9); // Slightly transparent white background
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); // Drop shadow for a "lifted" effect
-
-  // Title of the content block
-  .block-title {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: $default-font-color; // Dark grey for the text
-    margin-bottom: 0.5em;
-    position: relative;
-    padding-bottom: 0.5em;
-    font-family: $default-font;
-  }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 // Main Button bar
@@ -51,6 +29,8 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
+    width: 100vw;
+    flex: 0 0 auto;
     background-color: rgba(255, 255, 255, 0.9);; // Dark background
 
   .bar-button {
@@ -85,6 +65,42 @@ body {
       transform: translateY(0px); // Reset the button's position
       box-shadow: none; // Remove the shadow
     }
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;  // Enable vertical scrolling for this container
+  overflow-x: hidden;
+  flex: 1 1 auto;
+}
+
+// Mixins
+@mixin smooth-transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+// Main content blocks
+.content-block {
+  padding: 1em;
+  margin: 1em;
+  background-color: rgba(255, 255, 255, 0.9); // Slightly transparent white background
+  border-radius: 8px;
+  width: 95vw;
+
+  // Title of the content block
+  .block-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: $default-font-color; // Dark grey for the text
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-bottom: 0.5em;
+    border-bottom: #0a53be solid 1px;
+    font-family: $default-font;
   }
 }
 
@@ -188,7 +204,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0px 0px 10px 0px;
 }
 
 .field-label {

@@ -9,7 +9,7 @@ class OccListCreateView(generics.ListCreateAPIView):
     queryset = Occ.objects.all()
     serializer_class = OccSerializer
 
-class OccDetailView(generics.RetrieveAPIView):
+class OccDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Occ.objects.all()
     serializer_class = RccSerializer
 
@@ -17,7 +17,7 @@ class RccListCreateView(generics.ListCreateAPIView):
     queryset = Rcc.objects.all()
     serializer_class = RccSerializer
 
-class RccDetailView(generics.RetrieveAPIView):
+class RccDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Rcc.objects.all()
     serializer_class = RccSerializer
 
