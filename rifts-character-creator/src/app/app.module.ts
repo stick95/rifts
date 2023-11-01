@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
 import { HomeComponent } from './pages/home/home.component';
 import { CharacterComponent } from './pages/character/character.component';
+import { StatblockComponent } from './controls/statblock/statblock.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CharacterComponent
+    CharacterComponent,
+    StatblockComponent
   ],
   imports: [
     BrowserModule,
