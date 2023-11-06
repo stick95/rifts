@@ -6,7 +6,7 @@
   <div class="container content-block">
     <div class="block-title">Character</div>
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="field-container">
             <label class="field-label" for="name">Name</label>
             <input class="field-input field-md" type="text" id="name" name="name" [(ngModel)]="characterData.name" (ngModelChange)="onPropertyChange()" />
@@ -32,16 +32,25 @@
             <input class="field-input field-sm" type="number" id="level" name="level" max="20" [(ngModel)]="characterData.level" (ngModelChange)="onPropertyChange()"/>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="field-container">
-            <label class="field-label" for="age">PS</label>
-            <input class="field-input field-sm" type="number" id="ps" name="ps" [(ngModel)]="characterData.age" (ngModelChange)="onPropertyChange()"/>
-          </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <app-statblock [stat_label]="'HP'" [stat]="characterData.hp" (changeDetected)="onPropertyChange()" />
+          <app-statblock [stat_label]="'SDC'" [stat]="characterData.sdc" (changeDetected)="onPropertyChange()" />
+          <app-statblock [stat_label]="'MDC'" [stat]="characterData.mdc" (changeDetected)="onPropertyChange()" />
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          Test 3
+        <div class="col-12 col-md-6 col-lg-3">
+          <app-attributeblock [attributeLabel]="'PS'" [attribute]="characterData.ps" (changeDetected)="onPropertyChange()" />
+          <app-attributeblock [attributeLabel]="'PP'" [attribute]="characterData.pp" (changeDetected)="onPropertyChange()" />
+          <app-attributeblock [attributeLabel]="'PE'" [attribute]="characterData.pe" (changeDetected)="onPropertyChange()" />
+          <app-attributeblock [attributeLabel]="'PB'" [attribute]="characterData.pb" (changeDetected)="onPropertyChange()" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <app-attributeblock [attributeLabel]="'IQ'" [attribute]="characterData.iq" (changeDetected)="onPropertyChange()" />
+          <app-attributeblock [attributeLabel]="'ME'" [attribute]="characterData.me" (changeDetected)="onPropertyChange()" />
+          <app-attributeblock [attributeLabel]="'MA'" [attribute]="characterData.ma" (changeDetected)="onPropertyChange()" />
+          <app-attributeblock [attributeLabel]="'Spd'" [attribute]="characterData.spd" (changeDetected)="onPropertyChange()" />
         </div>
       </div>
   </div>
 </div>
+
 

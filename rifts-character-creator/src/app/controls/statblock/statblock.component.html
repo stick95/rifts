@@ -1,1 +1,4 @@
-<p>statblock works!</p>
+<div class="stat-block-container field-container">
+  <label class="field-label"><app-attributeblock [attributeLabel]="stat_label" [attribute]="stat" [isStat]="true" (changeDetected)="onChange()" /></label>
+  <input class="field-input field-sm" [(ngModel)]="stat.current_value" (change)="onChange()" />
+</div>

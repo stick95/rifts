@@ -1,0 +1,27 @@
+.roll-row {
+  display: flex;
+  justify-content: space-evenly; /* Space elements evenly */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Take up the full width */
+  margin-bottom: 10px;
+}
+
+.roll-source {
+  text-transform: capitalize;
+  flex: 0 0 auto;
+  text-align: left; /* Align text to the left */
+}
+
+.roll-dice {
+  flex: 0 0 auto;
+}
+
+.roll-input {
+  flex: 0;
+  /* Additional styles for input here */
+}
+
+.roll-button {
+  flex: 0 0 auto;
+  padding: 0px 5px;
+}

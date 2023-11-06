@@ -18,16 +18,10 @@ export class HomeComponent {
 
     characters: any[] = [];
     users: any[] = [];
-    characterData: Character = {
-      name: '',
-      user: 0
-    };
+    characterData: Character = new Character();
     createCharacterModal?: NgbModalRef;
     deleteCharacterModal?: NgbModalRef;
-    deleteCharacter: Character = {
-      name: '',
-      user: 0
-    };
+    deleteCharacter: Character = new Character();
 
     constructor(private characterService: CharacterService, private modalService: NgbModal,
                 private userService:UserService, private toastrService: ToastrService, private router: Router) { }
@@ -74,10 +68,7 @@ export class HomeComponent {
     }
 
     startCreateCharacter(content:any) {
-      this.characterData = {
-        name: '',
-        user: 0
-      };
+      this.characterData = new Character();
       this.createCharacterModal = this.modalService.open(content)
     }
 

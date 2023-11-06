@@ -1,0 +1,18 @@
+<ng-template [ngIf]="!isStat">
+  <div class="field-container">
+    <label class="field-label">{{attributeLabel}}<app-diceroller *ngIf="needsRolls" class="field-icon"
+                                                                 [rolls]="attribute.rolls"
+                                                                 (rollsUpdated)="handleRollsUpdated($event)">
+
+    </app-diceroller></label>
+    <input class="field-input field-sm field-input-readonly" type="number" readonly [(ngModel)]="attribute.max_value" />
+  </div>
+</ng-template>
+<ng-template [ngIf]="isStat">
+  <span>{{attributeLabel}} ({{attribute.max_value}})</span>
+  <app-diceroller *ngIf="needsRolls" class="field-icon" [rolls]="attribute.rolls"
+                  (rollsUpdated)="handleRollsUpdated($event)"></app-diceroller>
+</ng-template>
+
+
+

@@ -11,14 +11,18 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
 import { HomeComponent } from './pages/home/home.component';
 import { CharacterComponent } from './pages/character/character.component';
-import { StatblockComponent } from './controls/statblock/statblock.component';
+import { StatBlockComponent } from './controls/statblock/statblock.component';
+import {AttributeBlockComponent} from "./controls/attributeblock/attributeblock.component";
+import { DicerollerComponent } from './controls/diceroller/diceroller.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CharacterComponent,
-    StatblockComponent
+    StatBlockComponent,
+    AttributeBlockComponent,
+    DicerollerComponent
   ],
   imports: [
     BrowserModule,

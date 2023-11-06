@@ -10,6 +10,7 @@ import {Character} from "../../models/character.model";
 import {CharacterService} from "../../services/character.service";
 import {ClassesService} from "../../services/classes.service";
 import {Occ, Rcc} from "../../models/classes.model";
+import {StatBlockComponent} from "../../controls/statblock/statblock.component";
 
 @Component({
   selector: 'app-character',
@@ -19,14 +20,11 @@ import {Occ, Rcc} from "../../models/classes.model";
 export class CharacterComponent {
 
   id: number = 0;
-  characterData: Character = {
-    id: 0,
-    user: 0,
-    name: ''
-  }
+  characterData: Character = new Character();
   rccs: Rcc[] = [];
   occs: Occ[] = [];
   private characterDataSubject: Subject<Character> = new Subject<Character>();
+  stat = JSON.stringify(this.characterData.ps);
 
   constructor(private route: ActivatedRoute, private characterService: CharacterService,
               private toastrService: ToastrService, private location: Location, private classesService: ClassesService) {
@@ -83,6 +81,7 @@ export class CharacterComponent {
   }
 
   onPropertyChange(): void {
+    console.log(this.characterData);
     this.characterDataSubject.next(this.characterData); // notify the subject to autosave when data changes
   }
 
